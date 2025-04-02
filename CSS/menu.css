@@ -1,0 +1,83 @@
+.caixa {
+    position: fixed; 
+    top: 0; /* Garante que comece do topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100vw; 
+    height: 15vh; 
+    background-color: #f6eee2;
+    display: flex; /* Deixa os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui os elementos */
+    box-sizing: border-box;
+    z-index: 1000; /* Garante que fique sobre outros elementos */
+}
+
+
+.imgmenu {
+    width: 7.5%;
+    height: auto; 
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-left: 15%;
+}
+
+body {
+    padding-top: 18vh; /* Mesma altura da .caixa */
+}
+
+.menu{
+    position: fixed;
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Centraliza na tela */
+    top: 0;
+    gap: 40px;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+.menu li {
+    display: inline; /* Deixa os itens da lista na mesma linha */
+}
+
+.menu a {
+    display: inline-block;
+    width: 110px;
+    max-width: 110px;
+    text-decoration: none;
+    color: white;
+    background-color: #F4A460;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #800008;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background-image: url('/imagens/logoJacy.jpeg'); /* Caminho da imagem */
+    background-size: 40%;
+    background-position: center 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Ajuste para mais ou menos transparência */
+    z-index: -1; /* Mantém a camada atrás do conteúdo */
+}
+
+html {
+    scroll-behavior: smooth; /* Para o menu */
+    transform-origin: top left;
+    font-size: 1vw;
+}

@@ -1,0 +1,172 @@
+
+h2{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 55px;
+
+}
+.imagem2{
+    width: 24vw;  
+    height: auto; 
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;    
+}
+
+.textjacy {
+    display: flex; /* Deixa os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 130%;
+    line-height: 1.5;
+    color: rgb(10, 9, 9);
+    border-radius: 10px;
+}
+
+.textjacy p{
+    background-color: rgba(255, 200, 173, 0.6); /* Cor de fundo */
+    padding: 2%; /* Ajusta o espaçamento interno */
+    border-radius: 15px; /* Arredonda os cantos */
+    display: inline-block; /* Mantém a largura ajustada ao conteúdo */
+    max-width: 60%; /* Garante que o texto não ocupe toda a linha */
+    margin-right: 5%;
+}
+
+
+/* Cabeçalho */
+header {
+    color: white;
+    text-align: center;
+   
+}
+
+.servicosContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 23%); /* Define exatamente 2 colunas de 23% */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.servicosContainer button{
+    font-size: 18px;
+}
+
+/* Estilização das caixas de serviço */
+.servico {
+    max-width: 90%;
+    padding: 20px;
+    border: 3px solid #F4A460;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+/* Estilização do botão do WhatsApp */
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #F4A460;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #800008;
+}
+
+.imgRodaPe{
+    width: 7vw;  
+    height:auto; 
+    margin-left: 15%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;    
+}
+
+.RodaPe{
+    display: flex; /* Deixa os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100vw;  /* 100% da largura da tela */
+    box-sizing: border-box;
+    gap: 10px; /* Espaço entre imagem e texto */
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #F4A460;
+    margin-top: 5%;
+    color: rgb(10, 9, 9);
+    padding: 2px
+}
+ .RodaPe p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: auto;
+ }
+.RodaPe button {
+    background: hsl(0, 48%, 94%);
+    color: rgb(15, 10, 10);
+    border-radius: 10px;
+    font-size: 100%;
+    transition: 0.3s;
+    margin-left: 15%;
+}
+
+.RodaPe button:hover{
+        background:  rgba(255, 200, 173); 
+    
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        gap: 10px; /* Espaçamento entre os botões */
+    }
+    .menu a {
+        width: 55px;
+        font-size: 11.3px;
+    }
+
+    .imagem1 {
+        width: 60%; 
+        margin-left: 30%;
+    }
+
+    .imagem2{
+        width: 40%; 
+        height: 80%; 
+    }
+
+    .textjacy {
+        font-size: 14px;
+    }
+
+    .servicosContainer {
+        grid-template-columns: repeat(1, 80%); 
+       font-size: 13px;
+    }
+
+    .imgRodaPe{
+        width: 30%;  
+        height:60%; 
+    }
+    
+    .RodaPe{
+        font-size: 10px;
+    }
+
+    h2 {
+        font-family: 'Arial', sans-serif; /* Define a fonte */
+        font-size: 30px; /* Ajusta o tamanho */
+        font-weight: bold; /* Define o peso da fonte */
+        color: #000000; /* Cor do texto */
+        text-align: left ;
+    }
+        
+}
+    

@@ -1,0 +1,108 @@
+.menu{
+    position: fixed;
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Centraliza na tela */
+    top: 0;
+    gap: 40px;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    margin-top: 12%;
+}
+
+h3 {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 10%;
+}
+.paragrafo1{
+    font-size: 22px;
+    margin-left: 5%;
+    background-color: #f6eee2;
+    color: rgb(0, 1, 2);
+    position: relative;
+    left: -5vw; /* Move metade da largura da tela para a esquerda */
+    width: 100vw; /* Faz a div ocupar toda a largura da tela */
+    padding: 15px;
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.menu li {
+    display: inline; /* Deixa os itens da lista na mesma linha */
+}
+
+.menu a {
+    display: inline-block;
+    width: 110px;
+    max-width: 110px;
+    text-decoration: none;
+    color: white;
+    background-color: #F4A460;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #800008;
+}
+
+body {
+    font-size: 1rem; /* Adapta o tamanho do texto */
+    max-width: 90%; /* O conteúdo ocupará até 90% da tela */
+    margin: auto; /* Centraliza o conteúdo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.textjacy{
+    font-size: 25px;    
+}
+
+.imgJacyP{
+    width: 25vw;  /* Ocupa 80% da largura da tela */
+    height: 70vh; /* Ocupa 90% da altura da tela */
+    margin: 3%;
+    margin-bottom: 100px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10%;
+    overflow: hidden;
+    flex-shrink: 0;    
+    border: 2px solid  	#8B4513;
+    box-shadow: 5px 5px 5px brown;
+    
+}
+
+.textjacyParede:hover,
+.imgJacyP:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra mais intensa ao passar o mouse */
+    transition: 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+.textjacyParede {
+    display: flex; /* Deixa os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    gap: auto; /* Espaço entre imagem e texto */
+    font-size: 130%;
+    line-height: 1.5;
+    color: rgb(10, 9, 9);
+    border-radius: 15px;
+    margin: 10%;
+    width: 90%;
+    box-shadow: 5px 10px 5px brown;/*sombreamento no texto*/
+}
+
+.textjacyParede p{
+    background-color: #f6eee2; /* Cor de fundo */
+    padding: 2%; /* Ajusta o espaçamento interno */
+    border-radius: 15px; /* Arredonda os cantos */
+    display: inline-block; /* Mantém a largura ajustada ao conteúdo */
+    max-width: 60%; /* Garante que o texto não ocupe toda a linha */
+    margin-right: 2%;
+}

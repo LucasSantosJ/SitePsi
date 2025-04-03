@@ -13,9 +13,16 @@ h2{
     object-position: center top;
     border-radius: 50%;
     overflow: hidden;
-    flex-shrink: 0;    
+    flex-shrink: 0; 
+    border: 2px solid  	#bd5912;
+    box-shadow: 5px 5px 5px rgb(132, 27, 27);   
 }
+.textjacy :hover,
+.imagem2 :hover{
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9); 
+    transition: 0.3s ease-in-out; 
 
+}
 .textjacy {
     display: flex; /* Deixa os elementos lado a lado */
     align-items: center; /* Centraliza verticalmente */

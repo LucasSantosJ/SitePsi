@@ -55,7 +55,6 @@ body {
     font-size: 1rem; /* Adapta o tamanho do texto */
     max-width: 90%; /* O conteúdo ocupará até 90% da tela */
     margin: auto; /* Centraliza o conteúdo */
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -81,8 +80,8 @@ body {
 
 .textjacyParede:hover,
 .imgJacyP:hover {
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6); /* Sombra mais intensa ao passar o mouse */
-    transition: 0.3s ease-in-out; /* Suaviza a transição */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9); 
+    transition: 0.3s ease-in-out; 
 }
 
 .textjacyParede {
@@ -99,7 +98,7 @@ body {
 }
 
 .textjacyParede p{
-    background-color: #f6eee2; /* Cor de fundo */
+    background-color: rgba(255, 200, 173, 0.6); /* Cor de fundo */
     padding: 2%; /* Ajusta o espaçamento interno */
     border-radius: 15px; /* Arredonda os cantos */
     display: inline-block; /* Mantém a largura ajustada ao conteúdo */

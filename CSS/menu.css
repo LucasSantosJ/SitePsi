@@ -10,8 +10,8 @@
     justify-content: space-between; /* Distribui os elementos */
     box-sizing: border-box;
     z-index: 1000; /* Garante que fique sobre outros elementos */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
-
 
 .imgmenu {
     width: 7.5%;
@@ -22,7 +22,7 @@
 }
 
 body {
-    padding-top: 18vh; /* Mesma altura da .caixa */
+    padding-top: 18vh; 
 }
 
 .menu{

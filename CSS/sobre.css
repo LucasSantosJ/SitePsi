@@ -1,0 +1,59 @@
+.imagemSocial {
+    width: 24vw;  
+    height: auto; 
+    margin: 1%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10%;
+    overflow: hidden;
+    flex-shrink: 0; 
+    border: 2px solid  	#bd5912;
+    box-shadow: 5px 5px 5px rgb(132, 27, 27);   
+}
+
+.juntos {
+    display: flex; 
+    align-items: center;
+    font-size: 23px;
+    line-height: 1.5;
+    color: rgb(10, 9, 9);
+    border-radius: 10px;
+}
+
+.juntos p{
+    background-color: rgba(255, 200, 173, 0.25); /* Cor de fundo */
+    padding: 2%; /* Ajusta o espaçamento interno */
+    border-radius: 15px; /* Arredonda os cantos */
+    display: inline-block; /* Mantém a largura ajustada ao conteúdo */
+    max-width: 62%; /* Garante que o texto não ocupe toda a linha */
+}
+
+.imagemFlor {
+    width: 24vw;  
+    height: auto; 
+    margin: 1%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10%;
+    overflow: hidden;
+    flex-shrink: 0; 
+    border: 2px solid  	#bd5912;
+    box-shadow: 5px 5px 5px rgb(132, 27, 27);   
+}
+
+.sobre {
+    display: flex; 
+    align-items: center;
+    font-size: 23px;
+    line-height: 1.5;
+    color: rgb(10, 9, 9);
+    border-radius: 10px;
+}
+
+.sobre p{
+    background-color: rgba(255, 200, 173, 0.25); /* Cor de fundo */
+    padding: 2%; /* Ajusta o espaçamento interno */
+    border-radius: 15px; /* Arredonda os cantos */
+    display: inline-block; /* Mantém a largura ajustada ao conteúdo */
+    max-width: 62%; /* Garante que o texto não ocupe toda a linha */
+}

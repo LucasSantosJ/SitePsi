@@ -11,6 +11,7 @@
     box-sizing: border-box;
     z-index: 1000; /* Garante que fique sobre outros elementos */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    
 }
 
 .imgmenu {
@@ -37,6 +38,7 @@ body {
     z-index: 1000;
     text-align: center;
     margin-top: 2.5%;
+   
 }
 
 .menu li {
@@ -49,15 +51,16 @@ body {
     max-width: 110px;
     text-decoration: none;
     color: white;
-    background-color: #F4A460;
+    background-color:  #800008;
     font-size: 22px;
     padding: 10px 15px;
-    border-radius: 10px;
+    border-radius: 10px;    
     transition: 0.3s;
 }
 
 .menu a:hover {
-    background-color: #800008;
+    background-color: rgba(255, 200, 173);
+    border: 3px solid #8B4513
 }
 
 body::before {
@@ -67,7 +70,7 @@ body::before {
     left: 0;
     width: 150%;
     height: 150%;
-    background-image: url('/imagens/logoJacy.jpeg'); /* Caminho da imagem */
+    background-image: url('/imagens/logoJacy.jpeg');  
     background-size: 40%;
     background-position: center 100%;
     background-attachment: fixed;

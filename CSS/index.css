@@ -64,7 +64,7 @@ header {
 .servico {
     max-width: 90%;
     padding: 20px;
-    border: 3px solid #F4A460;
+    border: 3px solid #800008;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
@@ -74,7 +74,7 @@ header {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #F4A460;
+    background: #800008;
     color: white;
     text-decoration: none;
     border-radius: 7px;
@@ -83,7 +83,7 @@ header {
 }
 
 .botao:hover {
-    background: #800008;
+    background:  rgba(255, 200, 173);
 }
 
 .imgRodaPe{
@@ -105,11 +105,14 @@ header {
     gap: 10px; /* Espaço entre imagem e texto */
     font-size: 20px;
     line-height: 1.5;
-    background-color: #F4A460;
+    background-color: #800008;
     margin-top: 5%;
-    color: rgb(10, 9, 9);
-    padding: 2px
+    color: white;
+    padding: 2px;
+    
+    
 }
+
  .RodaPe p{
     font-size: 20px;
     font-style: italic;

@@ -9,37 +9,38 @@ h3 {
 body {
     font-size: 1rem; /* Adapta o tamanho do texto */
     max-width: 90%; /* O conteúdo ocupará até 90% da tela */
-    margin: auto; /* Centraliza o conteúdo */
     margin: 0;
     padding: 0;
-}
+} 
 
-.textjacy{
+p{
     font-size: 25px;    
 }
 
-.imgJacyP{
-    width: 20vw;  
-    height: 70vh; /* Ocupa 90% da altura da tela */
-    margin: 3%;
-    margin-bottom: 100px;
+.imgJacyAcenando,
+.imgPrancha{
+    width: 24vw;  
+    height: auto; 
+    margin: 1%;
     object-fit: cover;
     object-position: center top;
-    border-radius: 5%;
+    border-radius: 10%;
     overflow: hidden;
-    flex-shrink: 0;    
+    flex-shrink: 0; 
     border: 2px solid  	#8B4513;
-    box-shadow: 5px 5px 5px brown;
-    
+    box-shadow: 5px 5px 5px rgb(132, 27, 27);
 }
 
-.textjacyParede:hover,
-.imgJacyP:hover {
+.textjacyAcenando:hover,
+.imgJacyAcenando:hover,
+.imgPrancha:hover,
+.textPrancha:hover{
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9); 
     transition: 0.3s ease-in-out; 
 }
 
-.textjacyParede {
+.textjacyAcenando,
+.textPrancha {
     display: flex; /* Deixa os elementos lado a lado */
     align-items: center; /* Centraliza verticalmente */
     gap: auto; /* Espaço entre imagem e texto */
@@ -52,7 +53,8 @@ body {
     box-shadow: 5px 10px 5px brown;/*sombreamento no texto*/
 }
 
-.textjacyParede p{
+.textjacyAcenando p, 
+.textPrancha p{
     background-color: rgba(255, 200, 173, 0.6); /* Cor de fundo */
     padding: 2%; /* Ajusta o espaçamento interno */
     border-radius: 15px; /* Arredonda os cantos */

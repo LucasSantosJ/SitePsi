@@ -66,7 +66,7 @@ header {
     padding: 20px;
     border: 3px solid #800008;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 200, 173, 0.7);;
     text-align: center;
 }
 /* Estilização do botão do WhatsApp */
@@ -83,55 +83,10 @@ header {
 }
 
 .botao:hover {
-    background:  rgba(255, 200, 173);
+    background:  rgb(227, 124, 72);
 }
 
-.imgRodaPe{
-    width: 7vw;  
-    height:auto; 
-    margin-left: 15%;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;    
-}
 
-.RodaPe{
-    display: flex; /* Deixa os elementos lado a lado */
-    align-items: center; /* Centraliza verticalmente */
-    width: 100vw;  /* 100% da largura da tela */
-    box-sizing: border-box;
-    gap: 10px; /* Espaço entre imagem e texto */
-    font-size: 20px;
-    line-height: 1.5;
-    background-color: #800008;
-    margin-top: 5%;
-    color: white;
-    padding: 2px;
-    
-    
-}
-
- .RodaPe p{
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    margin-top: auto;
- }
-.RodaPe button {
-    background: hsl(0, 48%, 94%);
-    color: rgb(15, 10, 10);
-    border-radius: 10px;
-    font-size: 100%;
-    transition: 0.3s;
-    margin-left: 15%;
-}
-
-.RodaPe button:hover{
-        background:  rgba(255, 200, 173); 
-    
-}
 
 @media screen and (max-width: 768px) {
     .menu {

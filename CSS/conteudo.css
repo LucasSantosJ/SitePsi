@@ -32,8 +32,10 @@ body {
     background-color: rgba(255, 200, 173, 0.6);
     padding: 2%;
     border-radius: 15px;
-    max-width: 60vw;
-    margin-top: 38%;
+    max-width: 45vw;
+    margin-top: 37%;
+    height: 18vw;
+    margin-left: 8vw;
 }
 
 .paragrafo2 {
@@ -44,13 +46,14 @@ body {
     padding: 3%;
     border-radius: 15px;
     max-width: 40vw;
-    margin-top: 12%;
+    margin-top: 18%;
     gap: 20px;
     flex-wrap: wrap; /* Adapta em telas pequenas */
+    margin-left: 15%;
   }
   
   .textoQR {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.5;
     max-width: 60%;
   }
@@ -60,7 +63,16 @@ body {
     padding: 8px 16px;
     font-size: 75%;
     border-radius: 12px;
+    background-color:  #800008;
+    color: white;
+    transition: 0.3s;
+    margin-left: 25%;
   }
+
+  .botaoQR:hover {
+    background-color: #e67595;   /* Cor ao passar o mouse */
+    transform: scale(1.15);      
+}
   
   .QRcode {
     width: 40%;

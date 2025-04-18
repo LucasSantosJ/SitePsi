@@ -12,3 +12,7 @@ function abrirWhatsApp(servico) {
         window.open(link, "_blank");
  }
 
+ function abrirInstagram() {
+    const url = "https://www.instagram.com/psicologajacy/?igsh=cHMyamxjN2QxYmNz&utm_source=qr#"; 
+    window.open(url, "_blank");
+}

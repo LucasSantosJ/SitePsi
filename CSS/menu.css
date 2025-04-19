@@ -1,3 +1,4 @@
+
 .caixa {
     position: fixed; 
     top: 0; /* Garante que comece do topo */
@@ -84,4 +85,54 @@ html {
     scroll-behavior: smooth; /* Para o menu */
     transform-origin: top left;
     font-size: 1vw;
+      
+}
+
+  
+/* === Estilo Básico do Hamburger (☰) === */
+.hamburger {
+    display: none; /* Oculto em desktop */
+    font-size: 28px;
+    cursor: pointer;
+    color: #800008; /* Cor do ícone */
+    padding: 10px;
+    z-index: 1001;
+    user-select: none; /* Evita seleção de texto ao clicar */
+}
+
+/* === Estilos para Mobile === */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Mostra apenas em mobile */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    .menu {
+        position: fixed;
+        top: -100%; /* Esconde o menu */
+        left: 0;
+        width: 100%;
+        background-color: #f6eee2;
+        padding: 80px 0 30px;
+        transition: top 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .menu.ativo {
+        top: 0; /* Mostra o menu */
+    }
+    
+    /* Opcional: Muda o ☰ para ✕ quando aberto */
+    .hamburger.ativo::after {
+        content: "✕";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .hamburger.ativo {
+        color: transparent; /* Esconde o ☰ original */
+    }
 }

@@ -2,22 +2,32 @@ window.addEventListener('scroll', revelarAoRolar);
 window.addEventListener('load', revelarAoRolar); // ativa no carregamento também
 
 document.addEventListener("DOMContentLoaded", function() {
+  // Carrega o menu
   fetch('menu.html')
-      .then(response => response.text())
+      .then(response => {
+          if (!response.ok) throw new Error("Falha ao carregar o menu");
+          return response.text();
+      })
       .then(data => {
+          // Insere o menu no início do body
           document.body.insertAdjacentHTML('afterbegin', data);
           
+          // Seleciona os elementos
           const hamburger = document.getElementById('hamburger');
           const menu = document.getElementById('menu');
           
           if (hamburger && menu) {
-              hamburger.addEventListener('click', function() {
+              // Função para alternar menu
+              const toggleMenu = () => {
                   menu.classList.toggle('ativo');
                   hamburger.classList.toggle('ativo');
                   
-                  // Bloqueia scroll quando menu está aberto
+                  // Trava/destrava scroll
                   document.body.style.overflow = menu.classList.contains('ativo') ? 'hidden' : 'auto';
-              });
+              };
+              
+              // Evento de clique
+              hamburger.addEventListener('click', toggleMenu);
               
               // Fecha menu ao clicar nos links
               document.querySelectorAll('.menu a').forEach(link => {

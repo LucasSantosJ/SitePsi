@@ -1,5 +1,5 @@
 window.addEventListener('scroll', revelarAoRolar);
-window.addEventListener('load', revelarAoRolar); // ativa no carregamento também
+window.addEventListener('load', revelarAoRolar);
 
 document.addEventListener("DOMContentLoaded", function() {
   // Carrega o menu
@@ -19,11 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
           if (hamburger && menu) {
               // Função para alternar menu
               const toggleMenu = () => {
-                  menu.classList.toggle('ativo');
-                  hamburger.classList.toggle('ativo');
-                  
-                  // Trava/destrava scroll
-                  document.body.style.overflow = menu.classList.contains('ativo') ? 'hidden' : 'auto';
+                const isActive = menu.classList.toggle('ativo');
+                hamburger.classList.toggle('ativo');
+                document.body.classList.toggle('menu-aberto', isActive);
+                document.body.style.overflow = 'auto'; // Mantém o scroll sempre ativo
               };
               
               // Evento de clique

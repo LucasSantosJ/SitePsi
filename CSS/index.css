@@ -38,15 +38,10 @@ h2 {
 
 .textjacy p {
     background-color: rgba(255, 200, 173, 0.6);
-    /* Cor de fundo */
     padding: 2%;
-    /* Ajusta o espaçamento interno */
     border-radius: 15px;
-    /* Arredonda os cantos */
     display: inline-block;
-    /* Mantém a largura ajustada ao conteúdo */
     max-width: 60%;
-    /* Garante que o texto não ocupe toda a linha */
     margin-right: 5%;
 }
 
@@ -60,11 +55,11 @@ header {
 
 .servicosContainer {
     display: grid;
-    grid-template-columns: repeat(2, 23%);
-    /* Define exatamente 2 colunas de 23% */
+    grid-template-columns: repeat(2, 25%);
     gap: 20px;
     justify-content: center;
     margin-bottom: 5%;
+   
 }
 
 .servicosContainer button {

@@ -8,7 +8,7 @@ h3 {
 
 body {
     font-size: 1rem; /* Adapta o tamanho do texto */
-    max-width: 90%; /* O conteúdo ocupará até 90% da tela */
+    max-width: 100%; /* O conteúdo ocupará até 90% da tela */
     margin: 0;
     padding: 0;
 } 

@@ -62,7 +62,7 @@ body {
     max-width: 40vw;
     margin-top: 18%;
     gap: 20px;
-    flex-wrap: wrap; /* Adapta em telas pequenas */
+    flex-wrap: wrap; 
     margin-left: 6%;
   }
   
@@ -84,12 +84,78 @@ body {
   }
 
   .botaoQR:hover {
-    background-color: #e67595;   /* Cor ao passar o mouse */
+    background-color: #e67595;   
     transform: scale(1.15);      
 }
   
   .QRcode {
     width: 40%;
     height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .bloco {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .videoContainer,
+    .videoContainer2 {
+      max-width: 80%;
+      width: 300px;
+      height: 500px;
+      margin: 10% auto 0 auto;
+      padding: 15px;
+    }
+
+    .videoContainer{
+      margin-top:  25vw;
+    }
+  
+    .videoContainer2 {
+      margin-top: 100vw;
+      margin-left: auto;
+    }
+  
+    .paragrafo1 {
+      font-size: 16px;
+      max-width: 90%;
+      height: auto;
+      margin: 10% auto;
+      padding: 4%;
+      line-height: 1.4;
+      margin-top: -210vw;
+     
+    }
+  
+    .paragrafo2 {
+      flex-direction: column;
+      align-items: center;
+      max-width: 90%;
+      margin: 10% auto;
+      padding: 4%;
+      gap: 15px;
+      margin-top: 145vw;
+    }
+  
+    .textoQR {
+      font-size: 20px;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .botaoQR {
+      font-size: 90%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .QRcode {
+      width: 60%;
+      margin-top: 10px;
+    }
   }
   

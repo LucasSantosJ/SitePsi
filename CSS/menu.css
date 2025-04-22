@@ -30,26 +30,37 @@ body {
     z-index: 1000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     padding: 0 5%;
+    flex-wrap: wrap; 
 }
 
+.textoPsi{
+    color:black;
+    font-size: 50px;
+    font-style: italic;   
+}
+
+.crp {
+    font-size: 0.6em; 
+  }
+  
+
 .imgmenu {
-    width: 7.5%;
+    width: 7.3vw; 
     height: auto;
     border-radius: 50%;
     flex-shrink: 0;
-    margin-left: 10%;
+    margin-left: 125px; 
 }
 
-/* Menu Desktop */
-.menu {
+
+.menu{
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5vw; /* AJUSTADO: valor relativo para manter proporção */
     padding: 0;
-    margin-top: 2.5%;
-    margin-left: 0;
-    margin-right: 30%;
+    margin: 0; 
+    flex-wrap: wrap; 
 }
 
 .menu li {
@@ -58,15 +69,18 @@ body {
 
 .menu a {
     display: inline-block;
-    width: 150px;
+    width: 10vw; /* AJUSTADO: evita largura fixa que pode estourar em telas menores */
+    max-width: 150px; /* ADICIONADO: evita que o botão fique gigante em telas grandes */
+    min-width: 100px; /* ADICIONADO: garante legibilidade mínima */
     text-decoration: none;
     color: white;
     background-color: #800008;
-    font-size: 22px;
-    padding: 10px 15px;
+    font-size: 1.2rem; /* AJUSTADO: tamanho proporcional ao zoom */
+    padding: 0.6rem 1rem;
     border-radius: 10px;
     transition: all 0.3s ease;
     border: 3px solid transparent;
+    text-align: center;
 }
 
 .menu a:hover {
@@ -109,6 +123,11 @@ body::before {
 
 /* Estilos para mobile */
 @media (max-width: 768px) {
+    .textoPsi{
+        font-size: 20px;
+        margin-left: 100px;
+        
+    }
     html {
         font-size: 15px;
     }
@@ -119,10 +138,9 @@ body::before {
     
     .imgmenu {
         position: fixed;
-        top: 10px;
-        left: 10px;
-        margin-top: -2%;
-        width: 100px;
+        top: 2px;
+        right: 77%;
+        width: 90px;
         height: auto; 
     }
     

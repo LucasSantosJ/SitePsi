@@ -93,3 +93,7 @@ header {
 .botao:hover {
     background: #e67595
 }
+
+body {
+    font-size: 1rem; 
+  }

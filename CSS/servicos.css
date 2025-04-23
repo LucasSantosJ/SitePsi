@@ -83,8 +83,10 @@ p{
   
     .imgJacyAcenando,
     .imgPrancha {
-      width: 70vw;
-      height: 100vw;
+      width: 60vw;
+      max-width: 80vw;
+      height: 85vw;
+      max-height: 100vw;
       margin: 5% auto;
       display: block;
     }

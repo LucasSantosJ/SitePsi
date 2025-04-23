@@ -32,16 +32,21 @@
  }
  
 .botaoR{
-    background: hsl(0, 48%, 94%);
+    background:  #e67595;;
     margin-left: 20%;
     padding: 5px 10px;
-    border-radius: 7px;
+    border-radius: 10px;
+    border-color: black;
+    height: 3vw;;
     font-weight: bold;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .RodaPe button:hover{
-        background:  #e67595;
+        background:  #cf6a6a;
     
 }
 
@@ -50,19 +55,21 @@
     .RodaPe {
         height: 40%;
         padding: 10px;
-        flex-wrap: wrap; /* ADIÇÃO: Permite quebra de linha se necessário */
+        flex-wrap: wrap; 
     }
 
     .RodaPe p{
         font-weight: bold;
         font-size: 14px;
-        margin-top: -30%;
-        margin-left: 35%;
+        margin-top: -35vw;
+        margin-left: 35vw;
      }
 
     .imgRodaPe {
-        max-width: 25%;
-        margin-left: 7%; 
+        width: 25vw;
+        max-width: 30vw;
+        margin-left: 5vw; 
+        margin-top: 6vw;
     }
 
     .botaoR {

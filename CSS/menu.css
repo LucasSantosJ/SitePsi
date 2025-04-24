@@ -30,24 +30,30 @@ body {
     flex-wrap: wrap; 
 }
 
-.textoPsi{
+.textoPsi p{
+    font-family: 'fontjacy', sans-serif;
     position: fixed;
     color:black;
-    font-size: 50px;
-    font-style: italic;
+    font-size: 3.2vw;
     margin-left: 30vw;
     max-width: 110%;
-       
+    font-weight: 400;  
+    display: block;
+    line-height: 0.8;
+    margin-top: -2vw;
 }
 
 .crp {
-    font-size: 0.6em; 
-  }
+    font-size: 0.4em; 
+    font-family: Arial, Helvetica, sans-serif;  
+   
+
+}
   
 
 .imgmenu {
     position: fixed;
-    width: 8vw;
+    width: 7.3vw;
     max-width: 20vw; 
     min-width: 5vw;
     height: auto;
@@ -132,13 +138,9 @@ main {
 
 
 @media (max-width: 768px) {
-    .textoPsi{
-        font-size: 7vw;
-        margin-left: 100px;
-        
-    }
-    html {
-        font-size: 15px;
+    .textoPsi p{
+        font-size: 36px;
+        margin-top: -18px;
     }
     
     body::before {

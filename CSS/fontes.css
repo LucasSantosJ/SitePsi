@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'fontjacy';
+    src: url('/fontes/great-vibes/GreatVibes-Regular.ttf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fontjacy2';
+    src: url('/fontes/playfair-display/PlayfairDisplay-Bold.ttf') format('opentype');
+    font-display: swap;
+}

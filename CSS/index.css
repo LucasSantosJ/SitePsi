@@ -2,12 +2,23 @@ h2 {
     margin-top: 5%;
     text-align: center;
     font-size: 55px;
-
+    font-family: 'fontjacy2', sans-serif;
 }
+
+h3{
+  font-family: 'fontjacy2', sans-serif;
+  font-size: 22px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   max-width: 3840px; 
   margin: 0 auto; 
 }
+
+
 
 .imagem2 {
     width: 24vw;
@@ -61,7 +72,7 @@ header {
     gap: 20px;
     justify-content: center;
     margin-bottom: 5%;
-   
+    font-size: 18px;
 }
 
 .servicosContainer button {

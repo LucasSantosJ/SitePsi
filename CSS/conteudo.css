@@ -6,6 +6,12 @@
     flex-wrap: wrap;
 }
 
+p{
+  font-size: 25px; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 420;   
+}
+
 body {
     display: flex;
     flex-direction: column; 
@@ -161,7 +167,7 @@ body {
     }
   
     .QRcode {
-      width: 90%;
+      width: 90vw;
       margin: auto;
     }
   }

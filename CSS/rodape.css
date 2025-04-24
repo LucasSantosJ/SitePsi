@@ -8,7 +8,10 @@
     overflow: hidden;
     flex-shrink: 0;    
 }
-
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 .RodaPe{
     display: flex; 
     align-items: center;

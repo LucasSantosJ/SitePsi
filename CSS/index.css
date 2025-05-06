@@ -19,7 +19,6 @@ body {
 }
 
 
-
 .imagem2 {
     width: 24vw;
     height: auto;
@@ -69,7 +68,7 @@ header {
 .servicosContainer {
     display: grid;
     grid-template-columns: repeat(2, 25%);
-    gap: 20px;
+    gap: 10%;
     justify-content: center;
     margin-bottom: 5%;
     font-size: 18px;
@@ -81,22 +80,23 @@ header {
 
 /* Estilização das caixas de serviço */
 .servico {
-    max-width: 90%;
-    padding: 20px;
+    width: 120%;
+    max-width: 130%;
+    padding: 9%;
     border: 3px solid #800008;
     border-radius: 8px;
     background-color: rgba(255, 200, 173, 0.7);
     text-align: center;
 }
 
-/* Estilização do botão do WhatsApp */
+
 .botao {
     display: inline-flex;
-    margin-top: 10px; 
-    gap: 20px;
+    gap: 15%;
     align-items: center;
-    height: 2.75vw;
-    padding: 10px 20px;
+    height: 10%;
+    width: 70%;
+    padding: 7% 10%;
     background: #800008;
     color: white;
     text-decoration: none;

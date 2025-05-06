@@ -19,7 +19,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 15vh;
+    height: 17%;
     background-color: #f6eee2;
     display: flex;
     align-items: center;
@@ -32,62 +32,59 @@ body {
 
 .textoPsi p{
     font-family: 'fontjacy', sans-serif;
-    position: fixed;
     color:black;
     font-size: 3.2vw;
-    margin-left: 30vw;
+    margin-left: 25vw;
     max-width: 110%;
     font-weight: 400;  
     display: block;
     line-height: 0.8;
-    margin-top: -2vw;
 }
 
 .crp {
     font-size: 0.4em; 
     font-family: Arial, Helvetica, sans-serif;  
-   
-
 }
   
 
 .imgmenu {
     position: fixed;
-    width: 7.3vw;
+    width: 8vw;
     max-width: 20vw; 
     min-width: 5vw;
     height: auto;
     border-radius: 50%;
     flex-shrink: 0;
-    margin-left: 10vw; 
+    margin-left: 15%; 
 }
 
 
-.menu{
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 2.5vw; 
-    padding: 0;
-    margin: 0; 
-    flex-wrap: wrap; 
-    width: 100%;
-}
+.menu {
+    display: flex;             
+    gap: 2rem;                  
+    justify-content: center;  
+    align-items: center;       
+    list-style: none;          
+    padding: auto;
+    margin: auto;
+    margin-top: 3%;
+  }
+  
 
 .menu li {
     display: inline;
-   
 }
 
 .menu a {
     display: inline-block;
-    width: 10vw; 
+    width: 7rem; 
+    height: 2.5rem;
     max-width: 150px; 
     min-width: 100px;
     text-decoration: none;
     color: white;
     background-color: #800008;
-    font-size: 1.2rem; 
+    font-size: 1rem; 
     padding: 0.6rem 1rem;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -140,7 +137,7 @@ main {
 @media (max-width: 768px) {
     .textoPsi p{
         font-size: 36px;
-        margin-top: -18px;
+        margin-top: 18px;
     }
     
     body::before {

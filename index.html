@@ -19,32 +19,44 @@
     
     <section class="scroll-reveal">
         <h2>Quem eu sou?</h2>
-                <div class="textjacy">
-                    <img src="/imagens/jacySorrindo.jpeg"  class="imagem2" alt="Jacy sorrindo com uma das mãos no rosto">
-                    <p class="sobre" > Olá seja bem vindo(a)! <br>Sou  Jaciely Magalhães, mas pode me chamar de Jacy, psicóloga especializada em Gestalt-Terapia.
-                     Ajudo pessoas a encontrarem equilíbrio emocional e bem-estar.
-                </div>
+        <div class="videodesk">
+           <video width="900" height="700" controls>
+               <source src="/videos/video1Desk.mp4"  type="video/mp4">
+           </video>   
+       </div>
+
+    <div class="cartao-container">
+    <div class="perfil">
+        <img src="/imagens/imgsorrindo.jpeg" class="imagem-perfil" alt="Jacy sorrindo com uma das mãos no rosto">
+    </div>
+
+    <div class="contatos">
+        <div class="contato-item">
+            <img src="/imagens/whats.png" class="qrcode-img" alt="QR Code para o WhatsApp">
+            <button class="botao whatsapp" onclick="abrirWhatsApp('Atendimento Online')">
+                <i class="fab fa-whatsapp"></i> Agende sua consulta
+            </button>
+        </div>
+
+        <div class="contato-item">
+            <img src="/imagens/instagram.jpg" class="qrcode-img" alt="QR Code para o perfil no Instagram">
+            <button class="botao instagram" onclick="abrirInstagram()">
+                <i class="fab fa-instagram"></i> Acompanhe meu trabalho
+            </button>
+        </div>
+    </div>
+</div>
+
+
     </section>
     
     <section class="scroll-reveal">
         <h2>Serviços</h2>
-        <div class="servicosContainer">
-            <div class="servico">
-
-                <h3>Psicoterapia Individual</h3>
-                <p>A psicoterapia individual é um processo terapêutico focado no autoconhecimento,
-                     desenvolvimento emocional e bem-estar. Durante as sessões, o paciente tem um espaço seguro e acolhedor para explorar sentimentos, 
-                     pensamentos e desafios pessoais.</p>
-                <button class="botao" onclick="abrirWhatsApp('Psicoterapia individual online')"><i class="fab fa-whatsapp"></i>Agende sua Sessão</button>
-
-            </div>
-
         <div class="servico">
             <h3>Atendimento Online</h3>
             <p>A psicoterapia online oferece o mesmo acolhimento e qualidade do atendimento presencial, permitindo que você tenha suporte profissional de onde estiver.
                  As sessões são realizadas por meio de videochamadas seguras, garantindo conforto e privacidade.</p>
-                 <button class="botao" onclick="abrirWhatsApp('Atendimento Online')"><i class="fab fa-whatsapp"></i>Saiba mais</button>
-
+                 <button class="botao whatsapp" onclick="abrirWhatsApp('Atendimento Online')"><i class="fab fa-whatsapp"></i>Saiba mais</button>
         </div>     
      </section>
     

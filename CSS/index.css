@@ -19,45 +19,18 @@ body {
   margin: 0 auto;
 }
 
-
-.imagem2 {
-  width: 24vw;
-  height: auto;
-  margin: 0 auto;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-  border: 2px solid #bd5912;
-  box-shadow: 5px 5px 5px rgb(132, 27, 27);
-}
-
-.textjacy :hover,
-.imagem2 :hover {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9);
-  transition: 0.3s ease-in-out;
-
-}
-
-.textjacy {
+.videodesk{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 130%;
-  line-height: 1.5;
-  color: rgb(10, 9, 9);
-  border-radius: 10px;
+  padding: 1%;
+  border-radius: 18px;
+  width: 18%;
+  max-width: 40%;
+  height: 30vw;
+  margin: auto;
+  margin-top: 2%;
 }
-
-.textjacy p {
-  background-color: rgba(255, 200, 173, 0.6);
-  padding: 2%;
-  border-radius: 15px;
-  display: inline-block;
-  max-width: 60%;
-  margin-right: 5%;
-}
-
 
 /* Cabeçalho */
 header {
@@ -66,48 +39,122 @@ header {
 
 }
 
-.servicosContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 25%);
-  gap: 10%;
-  justify-content: center;
-  margin-bottom: 5%;
-  font-size: 18px;
-}
-
-.servicosContainer button {
-  font-size: 18px;
-}
-
-/* Estilização das caixas de serviço */
 .servico {
-  width: 120%;
-  max-width: 130%;
-  padding: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  min-width: 300px;
+  min-height: 300px;
+  padding: 40px;
   border: 3px solid #800008;
   border-radius: 8px;
   background-color: rgba(255, 200, 173, 0.7);
   text-align: center;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
 
+/* Estilo para o contêiner geral do cartão */
+.cartao-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaço entre a foto de perfil e os contatos */
+    font-family: sans-serif;
+    width: 1000px;
+    max-width: 1500px; /* Largura máxima do cartão */
+    margin: auto ;
+    margin-top: 20vw;/* Centraliza o cartão na página */
+}
+
+/* Estilo para o contêiner da imagem de perfil */
+.perfil {
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+/* Estilo para a imagem de perfil */
+.imagem-perfil {
+    width: 250px;
+    height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #976e6e;
+}
+
+/* Contêiner para os blocos de contato (agrupa WhatsApp e Instagram) */
+.contatos {
+    display: flex;
+    gap: 20px; /* Espaçamento entre o bloco do WhatsApp e do Instagram */
+    width: 100%;
+}
+
+/* Estilo para cada item de contato (QR Code + Botão) */
+.contato-item {
+    display: flex;
+    flex-direction: column; /* Organiza QR Code e botão um abaixo do outro */
+    align-items: center; /* Centraliza os itens */
+    text-align: center;
+    flex-grow: 1; /* Faz com que ambos os itens ocupem o mesmo espaço */
+    gap: 15px; /* Espaço entre o QR Code e o botão */
+}
+
+/* Estilo para as imagens dos QR Codes */
+.qrcode-img {
+    width: 270px;
+    height: 270px;
+    max-width: 300px;
+    max-height: 300px;
+    border: 1px solid #c4b8b8;
+    border-radius: 8px;
+}
+
+/* Estilo base para os botões */
 .botao {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
-  width: 13vw;
-  max-width: 100%;
-  height: auto;
-  background-color: #800008;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Faz o botão ocupar a largura do contêiner */
+    max-width: 220px; /* Largura máxima para o botão */
+    padding: 12px 15px;
+    border: none;
+    border-radius: 20px; /* Botões bem arredondados */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    gap: 10px; /* Espaço entre o ícone e o texto */
 }
 
+.botao:hover {
+    transform: scale(1.05);
+}
+
+/* Cor específica para o botão do WhatsApp */
+.botao.whatsapp {
+    background-color: #25D366;
+}
+
+/* Cor específica para o botão do Instagram */
+.botao.instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+/* Ícone dentro do botão */
+.botao .fab {
+    font-size: 20px;
+}
 @media screen and (max-width: 1280px) {
   .botao {
     width: 19vw;

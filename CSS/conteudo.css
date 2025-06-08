@@ -1,192 +1,117 @@
 
-p {
-  font-size: 28px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-.paragrafo1 {
-  font-size: 20px;
-  line-height: 1.5;
-  background-color: rgba(255, 200, 173, 0.6);
-  padding: 2%;
-  border-radius: 15px;
-  width: 65%;
-  max-width: 100%;
-  margin: auto;
-  margin-top: 15%;
+.pagina-conteudo section {
+    padding: 50px 0;
+    text-align: center;
 }
 
-
-.videoContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(255, 200, 173, 0.5);
-  padding: 1%;
-  border-radius: 18px;
-  width: 18%;
-  max-width: 40%;
-  height: 30vw;
-  margin-top: 4%;
-  margin-left: 25%;
+h1, h2 {
+   font-family: 'fontjacy2', sans-serif;
+    color: #190811;
+    margin-bottom: 20px;
 }
 
-.videoContainer2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(255, 200, 173, 0.5);
-  border-radius: 18px;
-  width: 18%;
-  height: 30vw;
-  max-width: 30%;
-  margin-left: 55%;
-  margin-top: -30%;
+h1 {
+    font-size: 3rem;
 }
 
-.paragrafo2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 200, 173, 0.6);
-  padding: 3%;
-  border-radius: 15px;
-  width: 65%;
-  max-width: 70%;
-  margin-left: 60%;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-bottom: 10%;
-  margin-top: 7%;
+h2 {
+    font-size: 2.5rem;
+}
+.secao-introducao p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: #270211;
 }
 
-.textoQR {
-  font-size: 35px;
-  line-height: 1.5;
-  max-width: 60%;
-  margin-left: 5%;
 
-}
-.QRcode {
-  width: 30%;
-  max-width: 50%;
-  height: auto;
-  margin-left: auto;
-  margin: auto;
+.secao-video-unico {
+    padding: 20px 0; /* Menos espaçamento vertical para dar foco ao vídeo */
 }
 
-.botaoQR {
-  padding: 15px 30px;
-  font-size: 16px;
-  border-radius: 12px;
-  background-color: #800008;
-  color: white;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  margin-left: 10%;
+.video-wrapper {
+    /* ESTA É A PARTE MAIS IMPORTANTE */
+    width: 100%;             /* Ocupa 100% da largura disponível */
+    max-width: 900px;        /* Mas NUNCA passará de 900px */
+    margin: 0 auto;          /* Centraliza o vídeo na página */
+
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    line-height: 0; 
 }
 
-.botaoQR:hover {
-  background-color: #e67595;
-  transform: scale(1.15);
+.video-wrapper video {
+    width: 100%;    
+    height: auto;   /* A altura se ajusta automaticamente para não distorcer */
 }
 
-@media screen and (max-width: 1280px) {
-  .paragrafo2 {
-    margin-top: 10%;
-    margin-left: 20%;
-  }
+.secao-cta-instagram {
+    background-color: #fff; 
+    font-size: 19px;
+}
 
-  .videoContainer {
-   
-    width: 25%;
-    max-width: 40%;
-    height: 20%;
+.cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.qrcode-img {
+    width:250px;
+    height: 250px;
+    border-radius: 8px;
+    border: 3px solid #eee;
+}
+
+.cta-info {
+    text-align: left;
+}
+
+.cta-info p {
+  font-size: 18px;
+    margin: 0 0 20px 0;
+    color: #555;
+}
+
+.botao-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.botao-instagram:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
     
-  }
-  
-  .videoContainer2{
-    width: 25%;
-    max-width: 40%;
-    height: 43vw;
-    margin-top: -42.5%;
-    
-  }
-  .paragrafo1 {
-    
-    margin-left: 20%;
-   
-  }
-
-}
-@media screen and (max-width: 768px) {
-  .paragrafo1 {
-      font-size: 16px;
-      margin: 5vw auto;
-      width: 90%;
-      padding: 5%;
-      margin-top: 40%;
-  }
-
-
-  .videoContainer {
-      width: 90vw;
-      height: 120vw;
-      max-width: 90vw;
-      margin: auto;
-      padding: 15px;
-  }
-
-  .videoContainer2 {
-    width: 90vw;
-    height: 130vw;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 13%;
-}
-
-  .videoContainer video,
-  .videoContainer2 video {
-      width: 75%;
-      height: auto;
-      border-radius: 3vw;
-  }
-
-
-  .paragrafo2 {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-top: 13%;
-      width: 90%;
-      padding: 4%;
-  }
-
-  .textoQR {
-      font-size: 20px;
-      max-width: 100%;
-      margin: auto;
-  }
-
-  .botaoQR {
-      font-size: 90%;
-      padding: 16px 32px;
-      margin-left: auto;
-  }
-
-  .QRcode {
-      width: 60vw;
-      max-width: 200px;
-      margin: 10% auto 0;
-      margin-left: 10%;
-  }
+    .cta-box, .cta-info {
+        text-align: center;
+    }
 }

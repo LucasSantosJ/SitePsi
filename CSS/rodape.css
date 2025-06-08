@@ -20,7 +20,7 @@ p{
     box-sizing: border-box;
     gap: 10px;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.25;
     background-color: #800008;
     color: white;
     padding: 2px;
@@ -39,8 +39,8 @@ p{
     background-color: #25D366;
     margin-left: 20%;
     padding: 2% 2%;
-    border-radius: 10px;
-    border-color: black;
+    border-radius: 50px;
+    border-color: rgb(14, 10, 10);
     height: 2vw;;
     font-weight: bold;
     transition: 0.3s;
@@ -48,6 +48,11 @@ p{
     align-items: center;
     gap: 0.8rem;
     margin-right: 5%;
+    color: #feffff;
+}
+
+.botaoR .fab {
+    font-size: 20px;
 }
 
 .RodaPe button:hover{

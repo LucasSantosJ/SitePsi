@@ -25,7 +25,7 @@ h2 {
     font-size: 2.5rem;
 }
 .secao-introducao p {
-    font-size: 1.1rem;
+    font-size: 19px;
     max-width: 800px;
     margin: 0 auto 20px auto;
     color: #270211;
@@ -54,7 +54,7 @@ h2 {
 }
 
 .secao-cta-instagram {
-    background-color: #fff; 
+  background-color: rgba(232, 223, 202, 0.2);
     font-size: 19px;
 }
 
@@ -103,7 +103,7 @@ h2 {
 }
 
 .botao-instagram:hover {
-    transform: scale(1.05);
+    transform: scale(1.4);
 }
 
 

@@ -33,6 +33,13 @@ body {
 h2{
   font-size: 40px;
 }
+
+.botao.instagram{
+   padding: 10px 15px;
+   width: 80%;
+   font-size: 15px;
+
+}
 }
 
 .videodesk{
@@ -46,6 +53,11 @@ h2{
   height: 30vw;
   margin: auto;
   margin-top: 2%;
+  
+}
+
+.video-mobile{
+  display: none;
 }
 
 header {
@@ -138,7 +150,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%; /* Faz o botão ocupar a largura do contêiner */
-    max-width: 220px; /* Largura máxima para o botão */
+    max-width: 250px; /* Largura máxima para o botão */
     border: none;
     border-radius: 20px; /* Botões bem arredondados */
     color: white;
@@ -150,7 +162,7 @@ header {
 }
 
 .botao:hover {
-    transform: scale(1.05);
+    transform: scale(1.4);
 }
 
 /* Cor específica para o botão do WhatsApp */
@@ -161,7 +173,8 @@ header {
 
 /* Cor específica para o botão do Instagram */
 .botao.instagram {
-   padding: px 20px;
+  font-size: 14px;
+    padding: 15px 20px;
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
@@ -176,58 +189,99 @@ header {
   transform: scale(1.4);
 }
 
-
 @media screen and (max-width: 768px) {
- 
 
-  h2 {
-    font-size: 30px;
-    margin-top: 10%;
-  }
+   
+    /* Flexbox no body para permitir reordenar os elementos */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza tudo horizontalmente */
+    }
 
-  .imagem2 {
-    width: 50vw;
-    height: auto;
-    margin: 0 auto;
-  }
+    /* --- 2. REORDENANDO OS ELEMENTOS PRINCIPAIS --- */
+    .titulo-cartao { order: 1; }
+    .video-mobile   { order: 2; }
+    .cartao-container { order: 3; }
+    .videodesk      { order: 4; }
 
-  .textjacy {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 100%;
-    padding: 5%;
-  }
+    .videodesk {
+        display: none;
+    }
 
-  .textjacy p {
-    max-width: 90%;
-    margin: 5% auto;
-    font-size: 16px;
-  }
+    /* Mostramos e estilizamos o vídeo de mobile */
+    .video-mobile {
+        display:flex; 
+        width: 90%;
+        max-width: 350px; 
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    /* --- 4. AJUSTES NO TÍTULO E FONTES --- */
+    h2, .titulo-cartao {
+        font-size: 32px; /* Tamanho de título bom para mobile */
+        text-align: center;
+        margin-top: 5vh;
+        line-height: 1.3;
+    }
 
-  .servicosContainer {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 5%;
-  }
+    /* --- 5. REESTRUTURAÇÃO DO CARTÃO DE VISITA --- */
+    .cartao-container {
+        flex-direction: column; /* Itens do cartão ficam um em cima do outro */
+        width: 90%;
+        max-width: 450px;
+        gap: 25px;
+        padding: 25px;
+        margin-top: 35px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+    }
 
-  .servico {
-    max-width: 100%;
-    padding: 15px;
-    font-size: 90%;
-  }
+    /* Reduz a imagem de perfil */
+    .imagem-perfil {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* --- 6. SIMPLIFICAÇÃO DOS CONTATOS --- */
+    /* Escondendo os QR Codes, conforme solicitado */
+    .qrcode-img {
+        display: none;
+    }
 
-  .servicosContainer button {
-    font-size: 16px;
-    border-radius: 10px;
-    height: 35px;
-  }
+    /* Ajustando o contêiner dos botões */
+    .contatos {
+        flex-direction: column; /* Botões um em cima do outro */
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .contato-item {
+        width: 100%;
+        gap: 0; /* Remove o gap, já que o QR Code sumiu */
+    }
 
-  .botao {
-    font-size: 90%;
-    padding: 8px 12px;
-    margin-top: 8px;
-    width: 50%;
-    max-width: 60%;
-  }
+    /* --- 7. ESTILOS FINAIS DOS BOTÕES PARA MOBILE --- */
+    .botao {
+        width: 90%; /* Botões ocupam 90% da largura do cartão */
+        max-width: 300px; /* Limite máximo de largura */
+        padding: 15px; /* Deixa os botões mais altos e fáceis de tocar */
+        font-size: 16px;
+        margin: 0 auto; /* Centraliza o botão dentro do seu container */
+        transform: none; /* Reseta o hover do desktop se não quiser o efeito no mobile */
+    }
+    .botao:hover {
+      transform: scale(1.03); /* Efeito de hover bem mais sutil */
+    }
+    
+    .botao.instagram {
+       font-size: 16px; /* Padroniza o tamanho da fonte */
+       padding: 15px; /* Padroniza o padding */
+    }
 }

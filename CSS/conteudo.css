@@ -1,9 +1,9 @@
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .pagina-conteudo section {
@@ -11,8 +11,9 @@
     text-align: center;
 }
 
-h1, h2 {
-   font-family: 'fontjacy2', sans-serif;
+h1,
+h2 {
+    font-family: 'fontjacy2', sans-serif;
     color: #190811;
     margin-bottom: 20px;
 }
@@ -24,6 +25,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
 }
+
 .secao-introducao p {
     font-size: 19px;
     max-width: 800px;
@@ -31,30 +33,28 @@ h2 {
     color: #270211;
 }
 
-
 .secao-video-unico {
-    padding: 20px 0; /* Menos espaçamento vertical para dar foco ao vídeo */
+    padding: 20px 0;
 }
 
 .video-wrapper {
-    /* ESTA É A PARTE MAIS IMPORTANTE */
-    width: 100%;             /* Ocupa 100% da largura disponível */
-    max-width: 900px;        /* Mas NUNCA passará de 900px */
-    margin: 0 auto;          /* Centraliza o vídeo na página */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden; 
-    line-height: 0; 
+    overflow: hidden;
+    line-height: 0;
 }
 
 .video-wrapper video {
-    width: 100%;    
-    height: auto;   /* A altura se ajusta automaticamente para não distorcer */
+    width: 100%;
+    height: auto;
 }
 
 .secao-cta-instagram {
-  background-color: rgba(232, 223, 202, 0.2);
+    background-color: rgba(232, 223, 202, 0.2);
     font-size: 19px;
 }
 
@@ -66,24 +66,27 @@ h2 {
     padding: 30px;
     max-width: 700px;
     margin: 0 auto;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .qrcode-img {
-    width:250px;
+    width: 250px;
     height: 250px;
     border-radius: 8px;
     border: 3px solid #eee;
 }
 
-.cta-info {
-    text-align: left;
-}
 
 .cta-info p {
-  font-size: 18px;
+    font-size: 18px;
     margin: 0 0 20px 0;
     color: #555;
+}
+.text-mobile{
+    display: none;
+}
+.container p{
+     color: #555;
 }
 
 .botao-instagram {
@@ -106,12 +109,78 @@ h2 {
     transform: scale(1.4);
 }
 
+.mobile{
+    display: none;
+}
 
 @media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
+    .text-desk{
+        display: none;
+    }
+
+    .text-mobile {
+        display: block; 
+        padding: 20px 0;
+        margin-top: -20px;
+        color: #1c0611;
+    }
+
+    .pagina-conteudo section {
+        padding: 40px 0; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 1.75rem; 
+    } 
+    .secao-introducao p {
+        font-size: 1rem; 
+        text-align: justify;
+    }
+    .video-wrapper {
+        display: none;
+    }
+
     
-    .cta-box, .cta-info {
+    .mobile {
+        display: block; 
+        padding: 20px 0;
+    }
+
+    .video-mobile2 {
+        width: 60%;  
+        height: 70%;   
+        max-width: 80%; 
+        margin: 0 auto;
+        margin-top: -10%;   
+        height: auto;    
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .video-mobile2 video {
+        width: 100%;
+        height: auto;
+        display: block; 
+    }
+    .cta-box {
+        flex-direction: column; 
+        gap: 25px;
+    }
+
+    .cta-info {
         text-align: center;
+    }
+
+    .qrcode-img {
+        width: 180px;
+        height: 180px;
+    }
+    .botao-instagram:hover {
+        transform: scale(1.05);
     }
 }
